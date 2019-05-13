@@ -15,7 +15,7 @@
 						$result=mysqli_query($con,$q);
 						while($row=mysqli_fetch_array($result)){
 					?>
-						<a href="question.php?id=<?php echo $row['q_id']; ?>" style="color:black;">
+						<a href="question.php?qid=<?php echo $row['q_id']; ?>" style="color:black;">
 							<li class="list-group-item" style="border:none;">
 								<?php echo $row['question']; ?>
 							</li>
